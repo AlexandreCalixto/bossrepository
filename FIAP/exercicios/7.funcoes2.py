@@ -8,6 +8,6 @@ def baskhara(a, b, c):
         raiz_1 = b * (-1) / 2 * a
     else:
         return None
-
-
+    
+    
 print(baskhara(1, 40, 2))

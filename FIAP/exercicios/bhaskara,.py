@@ -9,7 +9,7 @@ if delta < 0:
 elif delta == 0:
     x = (num_b * -1) / (2 * num_a)
     print(f'raiz unica: {x}')
-else delta > 1:
+else:
     x1 = (num_b * -1) + (delta ** (1/2)) / (2 * num_a)
     x2 = ((num_b * -1) - (delta ** (1/2))) / (2 * num_a)
     print(f'Duas raízes: {x1:.4f} e {x2:.4f}')

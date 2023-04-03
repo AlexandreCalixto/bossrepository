@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.title-page {
+    text-align: center;
+    font-size: 6vmin;
+    margin: 20px 0;
+    /* width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4));
+    background-color: #000;
+    color: #fff; */
+    
+    
+}
+
+/* criando a classe tour */
+.tour {
+    margin: 0px auto 50px;
+    width: 90%;
+    min-height: 500px;
+    /* border: 1px solid #900; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tour-item {
+    width: 40%;
+    /* border: 1px solid #900; */
+    margin: 40px 0;
+    padding: 30px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 30px #ccc;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.tour-item:hover {
+    transform: scale(1.1);
+
+}
+
+.tour-item img {
+    width:70%;
+    border-radius: 8px;
+}
+
+.tour-item p {
+    width: 80%;
+
+
+}
+
+.tour-title {
+    font-size: 3vmin;
+    /* letter-spacing: 1px; */
+    margin: 20px 0;
+}
+
+.tour-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 3px solid #dc143c;
+    padding: 8px 35px;
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 70px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #dc143c;
+}
+
+/* para celular */
+/* para telas menores do que 1000px USAR media querie
+vamos aumentar o tamanho dos elementos dentro do .tour-item */
+
+@media(max-width: 1000px){
+    .tour-item{
+        width: 85%;
+    }
+}
+
+@media(max-width: 800px){
+    .title-page {
+        font-size: 4vmin;
+    }
+    .tour-title {
+        font-size: 5vmin;
+    }
+}
